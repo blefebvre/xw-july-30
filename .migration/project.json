@@ -1,4 +1,5 @@
 {
+  "type": "xwalk",
   "sites": {
     "xw-july-30": {
       "previewOrg": "blefebvre",
@@ -6,7 +7,8 @@
       "aemSitePath": "/content/blefebvr-xw-july-30",
       "aemAssetsFolderPath": "/content/dam/blefebvr-xw-july-30",
       "aemSiteName": "blefebvr-xw-july-30",
-      "aemSiteTitle": "blefebvr-xw-july-30"
+      "aemSiteTitle": "blefebvr-xw-july-30",
+      "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json"
     }
   }
 }

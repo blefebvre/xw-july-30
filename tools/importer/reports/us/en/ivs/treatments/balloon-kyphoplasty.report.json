@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://patients.stryker.com/us/en/ivs/treatments/balloon-kyphoplasty.html",
+  "path": "us/en/ivs/treatments/balloon-kyphoplasty",
+  "timestamp": "2026-07-30T19:14:04.321Z",
+  "title": "Balloon kyphoplasty | Interventional Spine | Stryker",
+  "template": "treatment-detail",
+  "blocks": [
+    "hero-treatment",
+    "columns-benefits",
+    "cards-steps",
+    "form-contact",
+    "cards-resource"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-benefits",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-07-30T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://patients.stryker.com/us/en/ivs/treatments/balloon-kyphoplasty.html",
+    "originPage": "treatment detail page (Balloon kyphoplasty)",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "intro-benefits",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "2 columns: intro heading + paragraph | bordered benefits box with heading + bulleted list + link",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "two-column intro sections",
+      "content + highlighted benefits/feature box layouts",
+      "side-by-side text comparisons"
+    ],
+    "notSuitableFor": [
+      "single-column content",
+      "repeating card-style item grids",
+      "image galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/us/en/ivs/treatments/balloon-kyphoplasty"],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-30T00:00:00.000Z"
+  }
+}

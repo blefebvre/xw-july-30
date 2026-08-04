@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "projectType": "xwalk"
+  },
+  "templates": [
+    {
+      "name": "treatment-detail",
+      "urls": [
+        "https://patients.stryker.com/us/en/ivs/treatments/balloon-kyphoplasty.html"
+      ],
+      "representativeUrl": "https://patients.stryker.com/us/en/ivs/treatments/balloon-kyphoplasty.html",
+      "coverageGaps": [],
+      "description": "Treatment detail page with hero, intro/benefits columns, full-bleed callout, how-it-works cards, contact form, resources, and disclaimer/references.",
+      "blocks": [
+        {
+          "name": "hero-treatment",
+          "instances": [".fullWidthImageHero"]
+        },
+        {
+          "name": "columns-benefits",
+          "instances": [".cols2"]
+        },
+        {
+          "name": "cards-steps",
+          "instances": [".cols3"]
+        },
+        {
+          "name": "form-contact",
+          "instances": [".marketoform"]
+        },
+        {
+          "name": "cards-resource",
+          "instances": [".tabs"]
+        },
+        {
+          "name": "section-full-bleed-callout",
+          "instances": [".fullbleedpanel"],
+          "section": "dark-teal-gradient"
+        },
+        {
+          "name": "section-gold-cta",
+          "instances": ["div.text.parbase .has-background.bg-gold"],
+          "section": "gold"
+        },
+        {
+          "name": "section-potential-risks",
+          "instances": ["div.text.parbase .has-background.bg-light-gray"],
+          "section": "light-gray"
+        }
+      ]
+    }
+  ]
+}

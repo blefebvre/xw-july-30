@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-steps",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-07-30T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://patients.stryker.com/us/en/ivs/treatments/balloon-kyphoplasty.html",
+    "originPage": "treatment detail page (Balloon kyphoplasty)",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "how-it-works-steps",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "3 cards: image + title + description",
+    "buttonCount": 0,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "how-it-works / step-by-step explanations",
+      "informational item grids with image + heading + descriptive text",
+      "feature or process breakdowns"
+    ],
+    "notSuitableFor": [
+      "cards whose primary action is a download/CTA button (use cards-resource)",
+      "single-column content",
+      "side-by-side comparison layouts (use columns)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/us/en/ivs/treatments/balloon-kyphoplasty"],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-30T00:00:00.000Z"
+  }
+}

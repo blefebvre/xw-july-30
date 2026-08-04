@@ -1,0 +1,170 @@
+.form-contact .field-wrapper {
+  display: grid;
+  grid-auto-flow: row;
+  align-items: center;
+}
+
+.form-contact fieldset {
+  display: grid;
+  grid-auto-flow: row;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.form-contact form > .field-wrapper + .field-wrapper,
+.form-contact form fieldset .field-wrapper + .field-wrapper {
+  margin-top: 24px;
+}
+
+.form-contact form > .selection-wrapper + .selection-wrapper,
+.form-contact form fieldset .selection-wrapper + .selection-wrapper {
+  margin-top: 0.25em;
+}
+
+@media (width >= 600px) {
+  .form-contact fieldset {
+    grid-template-columns: repeat(2, auto);
+    gap: 0.25em 24px;
+  }
+
+  .form-contact form > .selection-wrapper + .selection-wrapper,
+  .form-contact form fieldset .field-wrapper + .field-wrapper,
+  .form-contact form fieldset .selection-wrapper + .selection-wrapper {
+    margin-top: 0;
+  }
+}
+
+@media (width >= 900px) {
+  .form-contact fieldset {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+.form-contact label,
+.form-contact fieldset > legend {
+  margin-bottom: 0.25em;
+  font-size: var(--body-font-size-s);
+  font-weight: 700;
+}
+
+.form-contact .selection-wrapper label {
+  margin: 0;
+  font-weight: normal;
+}
+
+.form-contact input,
+.form-contact select,
+.form-contact textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0.5em;
+  border-radius: 4px;
+  border: 1px solid var(--dark-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--body-font-size-s);
+  transition: border-color 0.2s;
+}
+
+.form-contact textarea {
+  resize: vertical;
+}
+
+.form-contact input:hover,
+.form-contact select:hover,
+.form-contact textarea:hover {
+  border: 1px solid var(--text-color);
+}
+
+.form-contact input:focus,
+.form-contact select:focus,
+.form-contact textarea:focus {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+.form-contact .selection-wrapper input {
+  width: max-content;
+}
+
+@media (width >= 600px) {
+  .form-contact input,
+  .form-contact select,
+  .form-contact textarea {
+    max-width: 50vw;
+  }
+
+  .form-contact .button {
+    max-width: max-content;
+  }
+}
+
+@media (width >= 900px) {
+  .form-contact input,
+  .form-contact select,
+  .form-contact textarea {
+    max-width: 33vw;
+  }
+}
+
+.form-contact .field-wrapper.selection-wrapper {
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 1ch;
+}
+
+.form-contact label[data-required]::after {
+  content: '*';
+  color: firebrick;
+  margin-inline-start: 1ch;
+}
+
+.form-contact .toggle-wrapper .switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.form-contact .toggle-wrapper input {
+  opacity: 0;
+  width: 52px;
+  height: 28px;
+}
+
+.form-contact .toggle-wrapper .slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  border-radius: 28px;
+  background-color: var(--dark-color);
+  transition: background-color 0.2s;
+}
+
+.form-contact .toggle-wrapper .slider::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  transition: transform 0.2s;
+}
+
+.form-contact .toggle-wrapper input:checked + .slider {
+  background-color: var(--link-color);
+}
+
+.form-contact .toggle-wrapper input:focus + .slider {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+.form-contact .toggle-wrapper input:checked + .slider::before {
+  transform: translateX(24px);
+}
